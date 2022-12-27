@@ -160,6 +160,8 @@
         const pokemonName = document.querySelector('.pokemon_name')
         const form = document.querySelector('.form')
         const inputForm = document.querySelector('.input_search')
+        const btnPrev = document.querySelector('.btn_prev')
+        const btnNext = document.querySelector('.btn_next')
 
         const fetchPokemon = async (pokemon) => {
             const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`)
@@ -193,6 +195,14 @@
         form.addEventListener('submit', (e) => {
             e.preventDefault()
             renderPokemon(inputForm.value)
+        })
+
+        btnPrev.addEventListener('click', () => {
+            
+        })
+
+        btnNext.addEventListener('click', () => {
+            
         })
 
         renderPokemon('1')
