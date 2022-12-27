@@ -20,7 +20,9 @@
 
         :root {
             --blue: #6ab7f5;
+            --very_dark_gray: #333333;
             --dark_gray: #3a444d;
+            --light_gray: #888888;
             --gray: #aaaaaa;
             --white: #ffffff;
         }
@@ -45,32 +47,27 @@
             display: inline-block;
             margin: 2rem 0;
             padding: 2rem;
+            position: relative;
         }
 
         .pokedex {
             max-width: 27rem;
             width: 100%;
-            position: relative;
         }
 
         .pokemon_image {
             position: absolute;
-            /* left: 50%;
+            left: 50%;
             bottom: 55%;
-            transform: translate(-63%, 20%); */
-            left: 49%;
-            top: 42%;
-            transform: translate(-50%, -50%);
+            transform: translate(-63%, 20%);
             height: 18%;
             z-index: 1;
         }
 
         .pokemon_data {
             position: absolute;
-            /* top: 54.5%;
-            right: 27%; */
             top: 54.5%;
-            right: 44.5%;
+            right: 27%;
             font-size: clamp(8px, 5vw, 25px);
             font-weight: 600;
             color: var(--gray);
@@ -80,6 +77,26 @@
         .pokemon_name {
             color: var(--dark_gray);
             text-transform: capitalize;
+        }
+
+        .form {
+            position: absolute;
+            top: 65%;
+            left: 13.5%;
+            width: 65%;
+            z-index: 1;
+        }
+
+        .input_search {
+            width: 100%;
+            padding: 4%;
+            outline: none;
+            border: 2px solid var(--very_dark_gray);
+            border-radius: 5px;
+            font-weight: 600;
+            color: var(--dark_gray);
+            font-size: clamp(8px, 5vw, 1rem);
+            box-shadow: -3px 4px 0 var(--light_gray);
         }
     </style>
 </head>
