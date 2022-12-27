@@ -111,11 +111,11 @@ main {
 }
 
 .button:active {
-    box-shadow: inset -4px 4px 0 var(--very_dark_gray);
-    font-size: 0.9rem;
+    font-size: 80%;
+    transform: scale(0.9);
 }
 
 .button:hover {
     background-color: var(--red);
-    box-shadow:  -2px 3px 0 var(--blue), -4px 6px 0 var(--black);
+    box-shadow: -2px 3px 0 var(--light_dark_gray), -4px 6px 0 var(--black), inset -2px 2px 0 var(--gray);
 }
