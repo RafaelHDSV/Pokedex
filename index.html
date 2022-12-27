@@ -43,17 +43,26 @@
             display: inline-block;
             margin: 2rem 0;
             padding: 2rem;
+            position: relative;
         }
 
         .pokedex {
+            max-width: 27rem;
             width: 100%;
+        }
+
+        .pokemon_image {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 
 <body>
     <main>
-        <img class="pokemon_image" src="" alt="pokemon">
+        <img class="pokemon_image" src="images/favicon-16x16.png" alt="pokemon">
 
         <img class="pokedex" src="images/pokedex.png" alt="pokedex.png">
     </main>
