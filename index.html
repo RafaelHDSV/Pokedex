@@ -172,13 +172,16 @@
 
         const renderPokemon = async (pokemon) => {
             const data = await fetchPokemon(pokemon)
-            pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated'][
-                'front_default'
-            ]
-            pokemonNumber.innerHTML = data.id
-            pokemonName.innerHTML = data.name
 
-            inputForm.value = ''
+            if (data) {
+                pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated'][
+                    'front_default'
+                ]
+                pokemonNumber.innerHTML = data.id
+                pokemonName.innerHTML = data.name
+
+                inputForm.value = ''
+            }
         }
 
         form.addEventListener('submit', (e) => {
