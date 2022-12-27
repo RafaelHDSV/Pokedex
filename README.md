@@ -4,9 +4,9 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Pokedex?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/Pokedex?style=for-the-badge)
 
-<img src="bg.jpg" alt="bg.jpg">
+<img src="images/desktop.png" alt="desktop.png">
 
-> DESCRIPTION HERE: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+> Pokédex developed with HTML, CSS and JavaScript
 
 ## Table of contents
 
@@ -36,28 +36,24 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: URL SOLUTION HERE
 - Live Site URL: URL SITE HERE
 
 ### Screenshot
 
   - Desktop
   
-    ![](bg.jpg)
+    ![](desktop.png)
     
   - Mobile
     
-    <img src="bg.jpg" alt="bg.jpg" width="300px" height="700px">
+    <img src="mobile.png" alt="mobile.png" width="300px">
 
 ## My process
 
 ### Built with
 
-- DESCRIPTION OF LANGUAGE
-<!--- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Javascript properties-->
+- HTML
+- CSS
+- JAVASCRIPT
 
 [⬆ Back to the top](#pokedex)<br>
