@@ -138,8 +138,8 @@
         <img class="pokemon_image" src="images/favicon-16x16.png" alt="pokemon">
 
         <div class="pokemon_data">
-            <span class="pokemon_number">6</span> -
-            <span class="pokemon_name">charizard</span>
+            <span class="pokemon_number"></span> -
+            <span class="pokemon_name"></span>
         </div>
 
         <form class="form">
@@ -155,13 +155,20 @@
     </main>
 
     <script>
+        let pokemonName = document.querySelector('.pokemon_name')
+
         const fetchPokemon = async (pokemon) => {
             const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon${pokemon}`)
             const data = await APIResponse.json()
             return data
         }
 
-        fetchPokemon('25');
+        const renderPokemon = async (pokemon) => {
+            const data = await fetchPokemon(pokemon)
+
+
+        }
+
     </script>
 </body>
 
