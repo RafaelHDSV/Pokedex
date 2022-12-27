@@ -42,11 +42,11 @@ Users should be able to:
 
   - Desktop
   
-    ![](desktop.png)
+    ![](images/desktop.png)
     
   - Mobile
     
-    <img src="mobile.png" alt="mobile.png" width="300px">
+    <img src="images/mobile.png" alt="mobile.png" width="300px">
 
 ## My process
 
