@@ -3,6 +3,7 @@
 
 :root {
     --blue: #6ab7f5;
+    --red: #df3030;
 
     --black: #000000;
     --very_dark_gray: #333333;
@@ -112,4 +113,9 @@ main {
 .button:active {
     box-shadow: inset -4px 4px 0 var(--very_dark_gray);
     font-size: 0.9rem;
+}
+
+.button:hover {
+    background-color: var(--red);
+    box-shadow:  -2px 3px 0 var(--blue), -4px 6px 0 var(--black);
 }
