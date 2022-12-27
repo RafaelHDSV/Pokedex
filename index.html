@@ -20,7 +20,10 @@
 
         :root {
             --blue: #6ab7f5;
+
+            --black: #000000;
             --very_dark_gray: #333333;
+            --light_dark_gray: #444444;
             --dark_gray: #3a444d;
             --light_gray: #888888;
             --gray: #aaaaaa;
@@ -96,7 +99,36 @@
             font-weight: 600;
             color: var(--dark_gray);
             font-size: clamp(8px, 5vw, 1rem);
-            box-shadow: -3px 4px 0 var(--light_gray);
+            box-shadow: -3px 4px 0 var(--light_gray), -5px 7px 0 var(--very_dark_gray);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            width: 65%;
+            transform: translate(-57%, 0);
+        }
+
+        .button {
+            width: 50%;
+            padding: 4%;
+            border: 2px solid var(--black);
+            border-radius: 5px;
+            font-size: clamp(5px, 5vw, 1rem);
+            font-weight: 600;
+            color: var(--white);
+            background-color: var(--light_dark_gray);
+            box-shadow: -2px 3px 0 var(--very_dark_gray), -4px 6px 0 var(--black);
+            cursor: pointer;
+            transition: .3s all ease;
+        }
+
+        .button:active {
+            box-shadow: inset -4px 4px 0 var(--very_dark_gray);
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -113,6 +145,11 @@
         <form class="form">
             <input class="input_search" type="search" required placeholder="Name or Number">
         </form>
+
+        <div class="buttons">
+            <button class="button btn_prev">Prev &lt;</button>
+            <button class="button btn_next">Next &gt;</button>
+        </div>
 
         <img class="pokedex" src="images/pokedex.png" alt="pokedex.png">
     </main>
