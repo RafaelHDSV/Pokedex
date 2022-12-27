@@ -53,9 +53,13 @@
 
         .pokemon_image {
             position: absolute;
+            /* left: 50%;
+            bottom: 55%;
+            transform: translate(-63%, 20%); */
             left: 49%;
             top: 42%;
             transform: translate(-50%, -50%);
+            height: 18%;
             z-index: 1;
         }
     </style>
@@ -64,6 +68,11 @@
 <body>
     <main>
         <img class="pokemon_image" src="images/favicon-16x16.png" alt="pokemon">
+
+        <div class="pokemon_data">
+            <span class="pokemon_number">6</span>
+            <span class="pokemon_name">charizard</span>
+        </div>
 
         <img class="pokedex" src="images/pokedex.png" alt="pokedex.png">
     </main>
