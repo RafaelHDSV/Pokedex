@@ -163,13 +163,18 @@
 
         const fetchPokemon = async (pokemon) => {
             const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`)
-            const data = await APIResponse.json()
-            return data
+
+            if (APIResponse.status === 200) {
+                const data = await APIResponse.json()
+                return data
+            }
         }
 
         const renderPokemon = async (pokemon) => {
             const data = await fetchPokemon(pokemon)
-            pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
+            pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated'][
+                'front_default'
+            ]
             pokemonNumber.innerHTML = data.id
             pokemonName.innerHTML = data.name
 
