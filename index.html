@@ -20,6 +20,8 @@
 
         :root {
             --blue: #6ab7f5;
+            --dark_gray: #3a444d;
+            --gray: #aaaaaa;
             --white: #ffffff;
         }
 
@@ -62,6 +64,23 @@
             height: 18%;
             z-index: 1;
         }
+
+        .pokemon_data {
+            position: absolute;
+            /* top: 54.5%;
+            right: 27%; */
+            top: 54.5%;
+            right: 44.5%;
+            font-size: clamp(8px, 5vw, 25px);
+            font-weight: 600;
+            color: var(--gray);
+            z-index: 1;
+        }
+
+        .pokemon_name {
+            color: var(--dark_gray);
+            text-transform: capitalize;
+        }
     </style>
 </head>
 
@@ -70,9 +89,13 @@
         <img class="pokemon_image" src="images/favicon-16x16.png" alt="pokemon">
 
         <div class="pokemon_data">
-            <span class="pokemon_number">6</span>
+            <span class="pokemon_number">6</span> -
             <span class="pokemon_name">charizard</span>
         </div>
+
+        <form class="form">
+            <input class="input_search" type="search" required placeholder="Name or Number">
+        </form>
 
         <img class="pokedex" src="images/pokedex.png" alt="pokedex.png">
     </main>
