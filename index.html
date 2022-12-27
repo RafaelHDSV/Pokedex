@@ -171,6 +171,9 @@
         }
 
         const renderPokemon = async (pokemon) => {
+            pokemonName.innerHTML = 'Loading...'
+            pokemonNumber.innerHTML = ''
+
             const data = await fetchPokemon(pokemon)
 
             if (data) {
@@ -191,6 +194,8 @@
             e.preventDefault()
             renderPokemon(inputForm.value)
         })
+
+        renderPokemon('1')
     </script>
 </body>
 
