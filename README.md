@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: URL SITE HERE
+- Live Site URL: https://pokedex-pokemon-rafael.netlify.app
 
 ### Screenshot
 
