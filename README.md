@@ -24,7 +24,7 @@
 Users should be able to:
 
 - Be able to see all pokemons and their information
-- Sort pokemon by name and id
+- Sort pokemon by name and id number
 - Switch pokemon with back and next buttons
 - Be able to use all the functionality of the project
 
